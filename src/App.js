@@ -1,17 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
+import "./App.css";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {Button, Alert} from "react-bootstrap";
-import {Header} from "./myComponents/Header"
+import { Header } from "./myComponents/Header";
 import { Body } from "./myComponents/Body";
+import { Footer } from "./myComponents/Footer";
+import { Home } from "./myComponents/Home";
+import { Signin } from "./myComponents/Signin";
+import Formm from "./myComponents/Formm";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
 function App() {
   return (
-   <>
-   {/* <Header/>
-   <Footer/> */}
-   <Body/>
-   </>
+     <Router>
+       <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Header />} />
+        </Routes>
+     </Router>
   );
 }
 
