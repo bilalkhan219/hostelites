@@ -1,0 +1,13 @@
+.jumbotron{
+    background-image: url('https://images.unsplash.com/photo-1571866735550-7b1ae3bdb144?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-size: cover ;
+    height: 90vh;
+    width: 100%;
+}
+.imagetext{
+    padding-top: 200px;
+}
+.btn-dark:hover{
+    color: black;
+    background-color: white;
+}
