@@ -24,17 +24,6 @@ export const Header = () => {
           </Navbar.Brand>
         </div>
       </Navbar>
-      {/* <div className="jumbotron text-white jumbotron-image shadow" >
-          <div className="container imagetext">
-          <h1 class="mb-4">
-              HOSTEL MANAGEMENT SYSTEM
-      </h1>
-      <h4 class="mb-4"> A hostel management software kjdsnckjndsajcansdjc  </h4>
-      <Button className="btn btn-dark">SIGN UP</Button>
-      <Button className="btn  mx-3 btn-dark">SIGN IN</Button>
-
-          </div>
-     </div> */}
     </>
   );
 };

@@ -11,7 +11,6 @@ import {useNavigate} from "react-router-dom";
 export const Body = () => {
   const navigate = useNavigate();
 
-    // const[isSignedIn, setSignedIn] = useState(false)
   return (
     <>
        <div className="jumbotron text-white jumbotron-image shadow" >
@@ -19,8 +18,8 @@ export const Body = () => {
           <h1 className="mb-4">
               HOSTELITES
       </h1>
-      <h4 className="mb-0"> Looking to avoid the hassle of multiple visits</h4> 
-      <h4 className="mb-4">just to get yourself a hostel room? We've got you covered.  </h4>
+      <h6 className="mb-0"> Looking to avoid the hassle of multiple visits</h6> 
+      <h6 className="mb-4">just to get yourself a hostel room? We've got you covered.  </h6>
       <Button className="btn btn-dark" onClick={()=> {navigate("/signup");}}>SIGN UP</Button>
       <Button className="btn  mx-3 btn-dark" onClick={()=> {navigate("signin")}}>SIGN IN</Button>
 
@@ -29,4 +28,3 @@ export const Body = () => {
     </>
   );
 };
-// onClick={()=> setSignedIn(true)}

@@ -7,13 +7,9 @@ import Checkbox from '@mui/material/Checkbox';
 
 
 
-export const Formm = () => {
-  const linkstyle={
-    textDecoration: "none",
-    cursor: "pointer"
-  }
+export const Signupform = () => {
 
-  const signinBtnStyle = {
+  const signupBtnStyle = {
     backgroundColor: "black",
     color: "white",
 }
@@ -33,31 +29,13 @@ return (
         <Avatar style={avatarStyle}>
           <LockOutlinedIcon />
         </Avatar>
-        <h4 className="my-2">SIGN IN</h4>
+        <h4 className="my-2">SIGN UP</h4>
       </Grid>
       <TextField id="namefield" label="Username" className="my-2" fullWidth required />
+      <TextField id="emailfield" label="Email" className="my-2" fullWidth required />
       <TextField id="passwordfield" label="Password" type="password" className="my-2" fullWidth required />
-      <FormGroup className="my-2">
-        <FormControlLabel
-          control={
-            <Checkbox
-              name="checkedB"
-              color="primary"
-            />
-          }
-          label="Remember me" />
-      </FormGroup>
-      <Button id ="signinbtn" type="submit" fullWidth variant="contained" className="my-3" style={signinBtnStyle}>Sign in</Button>
-      <Typography>
-        <Link style={linkstyle}>
-          Forgot password?
-        </Link>
-      </Typography>
-      <Typography>Do you have an account?
-        <Link style={linkstyle}>
-          Sign up
-        </Link>
-      </Typography>
+      <TextField id="conpasswordfield" label="Confirm Password" type="password" className="my-2" fullWidth required />
+      <Button id="signupbtn" type="submit" fullWidth variant="contained" className="my-3" style={signupBtnStyle}>Sign up</Button>
     </Paper>
   </Grid>
 );
