@@ -59,6 +59,39 @@ const styles = makeStyles(() =>
     content: {
       width: "100%",
     },
+    image: {
+      minHeight: 200,
+      minWidth: 200,
+      maxHeight: 350,
+      maxWidth: 350,
+      margin: "8px 5px",
+      borderRadius: 5,
+    },
+    template: {
+      border: `2px solid #615f58`,
+      borderRadius: 6,
+      marginBottom: 5,
+    },
+    titleGrid: {
+      padding: 10,
+    },
+    avalability: {
+      backgroundColor: "#586ee03f",
+      color: "#000",
+      margin: "3px 0px",
+      padding: "2px 3px",
+      fontWeight: 400,
+      borderRadius: 6,
+      "&:hover": {
+        backgroundColor: "#586ee05f",
+      },
+    },
+    avalabilityGrid: {
+      padding: "0px 40px 40px 0px",
+    },
+    facilities: {
+      color: "#369e53",
+    },
   })
 );
 export default styles;
