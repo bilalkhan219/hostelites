@@ -60,8 +60,8 @@ const styles = makeStyles(() =>
       width: "100%",
     },
     image: {
-      maxHeight: "60vh",
-      maxWidth: "60vh",
+      maxHeight: "40vh",
+      maxWidth: "40vh",
       margin: "8px 5px",
       borderRadius: 5,
     },
