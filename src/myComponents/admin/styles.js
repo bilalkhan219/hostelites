@@ -60,17 +60,10 @@ const styles = makeStyles(() =>
       width: "100%",
     },
     image: {
-      minHeight: 200,
-      minWidth: 200,
       maxHeight: 350,
       maxWidth: 350,
       margin: "8px 5px",
       borderRadius: 5,
-    },
-    template: {
-      border: `2px solid #615f58`,
-      borderRadius: 6,
-      marginBottom: 5,
     },
     titleGrid: {
       padding: 10,
@@ -91,6 +84,13 @@ const styles = makeStyles(() =>
     },
     facilities: {
       color: "#369e53",
+    },
+    paperstyle: {
+      padding: 20,
+      margin: "20px auto",
+      backgroundColor: "#dedcd7",
+      borderRadius: 6,
+      marginBottom: 5,
     },
   })
 );
