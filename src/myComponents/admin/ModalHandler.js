@@ -2,6 +2,7 @@ import { Grid, MenuItem, Typography } from "@material-ui/core";
 import { Rooms } from "./Rooms";
 import { Signupform } from "../Signupform";
 import { Students } from "./Students";
+import { Complaints } from "./Complaints";
 import React, { useState } from "react";
 
 import useStyles from "./styles";
@@ -16,6 +17,7 @@ export const ModalHandler = () => {
     0: <Rooms />,
     1: <Signupform />,
     2: <Students />,
+    3: <Complaints />,
   };
 
   const menuItems = () => {
@@ -47,6 +49,14 @@ export const ModalHandler = () => {
           onClick={() => setCurrentTab(2)}
         >
           Students
+        </MenuItem>
+        <MenuItem
+          className={
+            currentTab === 3 ? classes.activeMenuItem : classes.menuItem
+          }
+          onClick={() => setCurrentTab(3)}
+        >
+          Complaints
         </MenuItem>
       </Grid>
     );

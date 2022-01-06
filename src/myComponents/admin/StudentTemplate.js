@@ -3,15 +3,10 @@ import {
   Grid,
   List,
   ListItem,
-  ListItemIcon,
   ListItemText,
   Typography,
   Paper,
 } from "@material-ui/core";
-import FastfoodIcon from "@material-ui/icons/Fastfood";
-import WifiIcon from "@material-ui/icons/Wifi";
-import DirectionsCarIcon from "@material-ui/icons/DirectionsCar";
-import HotelIcon from "@material-ui/icons/Hotel";
 
 import useStyles from "./styles";
 
@@ -36,7 +31,7 @@ export const StudentTemplate = () => {
             <Typography variant="h3"> Maheen Mobeen</Typography>
           </Grid>
           <Grid item container xs={12} justifyContent="space-between">
-            <Grid item container xs={4}>
+            
             <List className={classes.facilities}>
       <ListItem>
         <ListItemText primary="Room No. 1" />
@@ -52,17 +47,7 @@ export const StudentTemplate = () => {
       </ListItem>
     </List>
             </Grid>
-            <Grid
-              item
-              container
-              xs={4}
-              justifyContent="flex-end"
-              alignItems="flex-end"
-              className={classes.avalabilityGrid}
-            >
-              
-            </Grid>
-          </Grid>
+            
         </Grid>
       </Grid>
     </Paper>
