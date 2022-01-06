@@ -1,6 +1,6 @@
 import { Grid, MenuItem, Typography } from "@material-ui/core";
 import { Rooms } from "./Rooms";
-import { Signupform } from "../Signupform";
+import { Requests } from "./Requests";
 import React, { useState } from "react";
 
 import useStyles from "./styles";
@@ -13,12 +13,12 @@ export const ModalHandler = () => {
 
   const tab = {
     0: <Rooms />,
-    1: <Signupform />,
+    1: <Requests />,
   };
 
   const menuItems = () => {
     return (
-      <Grid container>
+      <Grid container direction="column">
         <Typography variant="h4" className={classes.workflowTitle}>
           Admin Home Page
         </Typography>

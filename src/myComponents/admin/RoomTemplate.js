@@ -21,9 +21,10 @@ export const RoomTemplate = () => {
   return (
     <Paper elevation={10} className={classes.paperstyle}>
       <Grid item container xs={12}>
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <img alt="" src={require("./room1.jpg")} className={classes.image} />
         </Grid>
+        <Grid item xs={1}></Grid>
         <Grid item container xs={8}>
           <Grid
             item
