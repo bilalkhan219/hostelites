@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Grid,
+  Button,
   List,
   ListItem,
   ListItemText,
@@ -10,7 +11,7 @@ import {
 
 import useStyles from "./styles";
 
-export const StudentTemplate = ({ content }) => {
+export const RequestsTemplate = ({ content }) => {
   const classes = useStyles();
 
   return (
@@ -34,7 +35,7 @@ export const StudentTemplate = ({ content }) => {
           >
             <Typography variant="h3"> {content.name}</Typography>
           </Grid>
-          <Grid item container xs={12} justifyContent="space-between">
+          <Grid item container xs={8} justifyContent="space-between">
             <List className={classes.facilities}>
               <ListItem>
                 <ListItemText primary={`Room No. ${content.roomNo}`} />
@@ -50,9 +51,43 @@ export const StudentTemplate = ({ content }) => {
               </ListItem>
             </List>
           </Grid>
+          <Grid
+            item
+            container
+            xs={2}
+            justifyContent="flex-end"
+            alignItems="flex-end"
+            className={classes.avalabilityGrid}
+          >
+            <Button
+              id="Resolved"
+              type="submit"
+              variant="contained"
+              className={classes.accept}
+            >
+              Accept
+            </Button>
+          </Grid>
+          <Grid
+            item
+            container
+            xs={2}
+            justifyContent="flex-end"
+            alignItems="flex-end"
+            className={classes.avalabilityGrid}
+          >
+            <Button
+              id="Resolved"
+              type="submit"
+              variant="contained"
+              className={classes.reject}
+            >
+              Reject
+            </Button>
+          </Grid>
         </Grid>
       </Grid>
     </Paper>
   );
 };
-export default StudentTemplate;
+export default RequestsTemplate;
