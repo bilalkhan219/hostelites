@@ -50,6 +50,14 @@ export const ComplaintTemplate = () => {
             >
               Resolved
             </Button>
+            {/* <Button
+              id="Resolved"
+              type="submit"
+              variant="contained"
+              className={classes.btnStyle}
+            >
+              Resolved
+            </Button> */}
             </Grid>
           </Grid>
           </Grid>
