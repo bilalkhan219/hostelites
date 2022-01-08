@@ -15,17 +15,16 @@ import HotelIcon from "@material-ui/icons/Hotel";
 
 import useStyles from "./styles";
 
-export const RoomTemplate = () => {
+export const RoomTemplate = ({ title, price, avalability }) => {
   const classes = useStyles();
 
   return (
     <Paper elevation={10} className={classes.paperstyle}>
-      <Grid item container xs={12}>
+      <Grid item container xs={12} className={classes.roomstemplate}>
         <Grid item xs={3}>
           <img alt="" src={require("./room1.jpg")} className={classes.image} />
         </Grid>
-        <Grid item xs={1}></Grid>
-        <Grid item container xs={8}>
+        <Grid item container xs={9}>
           <Grid
             item
             container
@@ -33,8 +32,8 @@ export const RoomTemplate = () => {
             justifyContent="space-between"
             className={classes.titleGrid}
           >
-            <Typography variant="h3"> Luxury Room</Typography>
-            <Typography variant="h4"> 12,000 PKR </Typography>
+            <Typography variant="h3"> {title}</Typography>
+            <Typography variant="h4"> {price} PKR </Typography>
           </Grid>
           <Grid item container xs={12} justifyContent="space-between">
             <Grid item container xs={4}>
@@ -90,7 +89,7 @@ export const RoomTemplate = () => {
               className={classes.avalabilityGrid}
             >
               <Typography variant="h6" className={classes.avalability}>
-                Available
+                {avalability}
               </Typography>
             </Grid>
           </Grid>

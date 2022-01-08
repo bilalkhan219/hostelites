@@ -60,13 +60,24 @@ const styles = makeStyles(() =>
       width: "100%",
     },
     image: {
-      maxHeight: "60vh",
-      maxWidth: "60vh",
+      height: "35vh",
+      width: "35vh",
       margin: "8px 5px",
       borderRadius: 5,
     },
+    imageForComplaint: {
+      height: 50,
+      width: 50,
+      margin: "3px 10px",
+      borderRadius: 2,
+    },
     titleGrid: {
       padding: 10,
+    },
+    btnStyle: {
+      backgroundColor: "#369e53",
+      color: "#FFFFFF",
+      padding: "5px 10px",
     },
     avalability: {
       backgroundColor: "#586ee03f",
@@ -85,12 +96,31 @@ const styles = makeStyles(() =>
     facilities: {
       color: "#369e53",
     },
+    nameStyle: {
+      fontWeight: "bold",
+    },
     paperstyle: {
       padding: 20,
       margin: "20px auto",
       backgroundColor: "#dedcd7",
       borderRadius: 6,
       marginBottom: 5,
+    },
+    accept: {
+      backgroundColor: "#369e53",
+      color: "#FFFFFF",
+      padding: "5px 10px",
+    },
+    reject: {
+      backgroundColor: "#DA615D",
+      color: "#FFFFFF",
+      padding: "5px 10px",
+    },
+    template: {
+      width: "130vh",
+    },
+    roomstemplate: {
+      width: "150vh",
     },
   })
 );

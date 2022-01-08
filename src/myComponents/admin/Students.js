@@ -1,9 +1,8 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 
-import { RequestsTemplate } from "./RequestsTemplate";
-
-const requests = [
+import { StudentTemplate } from "./StudentTemplate";
+const students = [
   {
     id: 1,
     name: "Sidra Rasool",
@@ -45,14 +44,13 @@ const requests = [
     phone: "0300-2739234",
   },
 ];
-
-export const Requests = () => {
+export const Students = () => {
   return (
     <Grid container item xs={12}>
-      {requests.map((request) => (
-        <RequestsTemplate content={request} />
+      {students.map((student) => (
+        <StudentTemplate content={student} />
       ))}
     </Grid>
   );
 };
-export default Requests;
+export default Students;
