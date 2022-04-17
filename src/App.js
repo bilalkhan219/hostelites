@@ -6,7 +6,7 @@ import { Signin } from "./myComponents/Signin";
 import { Signup } from "./myComponents/Signup";
 import { AdminHome } from "./myComponents/admin/AdminHome";
 import {UserHome} from "./myComponents/user/UserHome";
-import {BookingForm} from "./myComponents/user/BookingForm";
+import {Book} from "./myComponents/user/Book";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -16,7 +16,9 @@ function App() {
         <Route exact path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/adminHome" element={<AdminHome />} />
-        <Route path="/userHome" element={<UserHome />} />      </Routes>
+        <Route path="/userHome" element={<UserHome />} />    
+        <Route path="/bookform" element={<Book />} />    
+        </Routes>
     </Router>
    // <BookingForm/>
   );

@@ -1,12 +1,13 @@
 import React from 'react';
 import {Header} from "../Header";
 import { Footer } from "../Footer";
-import {BookPage} from "./BookPage";
+import {BookingForm} from "./BookingForm";
 export const Book = () => {
     return (
         <>
-        
-        <BookPage/>
+        <Header/>
+        <BookingForm/>
+        <Footer/>
         
         </>
     )

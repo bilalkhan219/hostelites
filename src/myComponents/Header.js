@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar } from "react-bootstrap";
 import "./styles.css";
 import { useNavigate } from "react-router-dom";
+import { Margin } from "@mui/icons-material";
 
 export const Header = () => {
   const navigate = useNavigate();

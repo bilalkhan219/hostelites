@@ -4,6 +4,7 @@ import { Signupform } from "../Signupform";
 import {Complaints} from "./Complaints"
 import {Invoice} from "./Invoice";
 import {Book} from "./Book"
+import {BookPage} from "./BookPage";
 import React, { useState } from "react";
 
 import useStyles from "./styles";
@@ -17,7 +18,7 @@ export const UserModelHandler = () => {
   const tab = {
     0: <Complaints />,
     1: <Invoice />,
-    2: <Book />
+    2: <BookPage />
     
   };
 

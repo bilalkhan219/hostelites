@@ -93,6 +93,14 @@ const styles = makeStyles(() =>
     avalabilityGrid: {
       padding: "0px 40px 40px 0px",
     },
+    bookbtn: {
+      backgroundColor: "black",
+      color:"white",
+      "&:hover":{
+        color: "black",
+        backgroundColor:"grey",
+      }
+    },
     facilities: {
       color: "#369e53",
     },
@@ -102,7 +110,7 @@ const styles = makeStyles(() =>
     paperstyle: {
       padding: 20,
       margin: "20px auto",
-      backgroundColor: "#dedcd7",
+      backgroundColor: "white",
       borderRadius: 6,
       marginBottom: 5,
     },

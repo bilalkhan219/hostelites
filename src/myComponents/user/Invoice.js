@@ -59,45 +59,18 @@ const Submit = () => {
               <th>Bill</th>
             </tr>
             <tr>
-              <td>G-12</td>
-              <td>Hostelite User</td>
+              <td>G-12  </td>
+              <td>Hostelite User   </td>
               <td>10,000 Rupees</td>
             </tr>
             </table>
             </div>
-        {/* <TextField 
-        id="userName" 
-        label="Full Name" 
-        variant="outlined"
-        className="my-2"
-        fullWidth
-        required
-        //value={userName}
-        />
-        <TextField 
-        id="Email" 
-        label="Email" 
-        variant="outlined"
-        className="my-2"
-        fullWidth
-        required
-        //value={email}
-        />
-        <TextField 
-        id="complaint" 
-        label="Complaint" 
-        variant="outlined"
-        className="my-2"
-        fullWidth
-        required
-        //value={complaint}
-        /> */}
         <Button
           id="print"
           type="submit"
           fullWidth
           variant="contained"
-          className="hide-on-print"
+          className="hide-on-print my-5"
           style={submitBtn}
           onClick={Submit}
         >

@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Form,Button,Row,Col, Container } from "react-bootstrap";
 import "./styles.css";
 import { dark, light } from "@material-ui/core/styles/createPalette";
+import { shadows } from "@mui/system";
+import {Paper} from "@material-ui/core"
 
 export const BookingForm = () => {
     const linkstyle = {
@@ -18,18 +20,17 @@ export const BookingForm = () => {
       };
       const paperstyle = {
         padding: 20,
-        height: "90vh",
+        height: "110vh",
         width: 500,
         margin: "50px auto",
         backgroundColor:"white",
-        align:"center"
-    
+        align:"center",    
       };
       const avatarStyle = {
         backgroundColor: "black",
       };
     return (
-     <Container style={paperstyle}>
+     <Paper elevation={10} style={paperstyle}>
        <Row>
            <Form.Group as={Col} ><img
       src='https://cdn-icons-png.flaticon.com/512/562/562674.png'
@@ -106,7 +107,7 @@ export const BookingForm = () => {
     Submit
   </Button>
 </Form>
-</Container>
+</Paper>
       );
     };
     export default BookingForm;
